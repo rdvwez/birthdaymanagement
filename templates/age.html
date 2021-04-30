@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+    
+    {% block content %} 
+    
+    <h1>{{ titrepage }}</h1>
+   
+
+    <div class="columns">
+    <div class="column col-12">
+        
+
+        <table class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th>nom et prenom </th>
+                {% if line.date %}
+                 <th> Date de naissance</th>
+                {% endif %}
+                
+                <th>Année de naissance</th>
+                <th> age</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+                
+                <tr class="">
+                    <td>{{ line.names }} </td>
+                    {% if line.date %}
+                    <td> {{ line.date }} </td>
+                   {% endif %}
+                    <td>{{ line.annee }}</td>
+                    <td>{{ line.age }} an(s)</td>
+                   
+                </tr>
+                
+              
+              
+            </tbody>
+          </table>
+        </div >
+        </div >
+
+        
+       
+    {% endblock %}

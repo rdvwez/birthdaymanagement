@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+    
+    {% block content %} 
+    <h1>Resultat de la recherche</h1>
+   
+
+    <div class="columns">
+    <div class="column col-12">
+        
+
+        <table class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th>nom et prenom </th>
+                
+                <th>date de naissance</th>
+                <!-- <th> actions</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              
+                
+                <tr class="">
+                    <td>{{ line.names }} </td>
+                    <td>{{ line.date }}</td>
+                   
+                </tr>
+                
+              
+              
+            </tbody>
+          </table>
+        </div >
+        </div >
+
+        
+       
+    {% endblock %}
